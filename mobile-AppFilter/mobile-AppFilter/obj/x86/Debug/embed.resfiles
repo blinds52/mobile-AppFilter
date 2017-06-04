@@ -1,0 +1,10 @@
+App.xbf
+Views\MainPage.xbf
+Views\MapPage.xbf
+Views\MasterDetailDetailControl.xbf
+Views\MasterDetailDetailPage.xbf
+Views\MasterDetailPage.xbf
+Views\SettingsPage.xbf
+Views\ShellPage.xbf
+Views\TabbedPage.xbf
+Views\WebViewPage.xbf
