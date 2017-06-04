@@ -141,7 +141,6 @@ E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilte
 E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\bin\x86\Debug\System.Xml.XmlDocument.dll
 E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\bin\x86\Debug\System.Xml.XmlSerializer.dll
 E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\bin\x86\Debug\Microsoft.WindowsAzure.Messaging.Managed.dll
-E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\obj\x86\Debug\mobile_AppFilter.csprojResolveAssemblyReference.cache
 E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\obj\x86\Debug\App.g.i.cs
 E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\obj\x86\Debug\App.g.cs
 E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\obj\x86\Debug\Views\MainPage.g.i.cs

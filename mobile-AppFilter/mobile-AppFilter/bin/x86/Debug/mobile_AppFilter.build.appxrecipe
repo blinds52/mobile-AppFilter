@@ -436,7 +436,7 @@
     <AppxPackagedFile Include="E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\bin\x86\Debug\mobile_AppFilter.xr.xml">
       <PackagePath>mobile_AppFilter.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Repos\myGit\GitHub\blinds52\mobile-AppFilter\mobile-AppFilter\mobile-AppFilter\bin\x86\Debug\resources.pri">
