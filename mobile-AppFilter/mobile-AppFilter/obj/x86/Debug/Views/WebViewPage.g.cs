@@ -15,7 +15,8 @@ namespace mobile_AppFilter.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_Windows_UI_Xaml_Controls_WebView_Source(global::Windows.UI.Xaml.Controls.WebView obj, global::System.Uri value, string targetNullValue)
             {
@@ -27,6 +28,7 @@ namespace mobile_AppFilter.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class WebViewPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IWebViewPage_Bindings
@@ -82,12 +84,15 @@ namespace mobile_AppFilter.Views
                 this.initialized = false;
             }
 
-            // WebViewPage_obj1_Bindings
-
-            public void SetDataRoot(global::mobile_AppFilter.Views.WebViewPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::mobile_AppFilter.Views.WebViewPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -109,15 +114,16 @@ namespace mobile_AppFilter.Views
             }
             private void Update_Source(global::System.Uri obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_WebView_Source(this.obj2, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class WebViewPage_obj1_BindingsTracking
             {
-                global::System.WeakReference<WebViewPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<WebViewPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public WebViewPage_obj1_BindingsTracking(WebViewPage_obj1_Bindings obj)
                 {
@@ -132,7 +138,7 @@ namespace mobile_AppFilter.Views
                 public void PropertyChanged_(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     WebViewPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::mobile_AppFilter.Views.WebViewPage obj = sender as global::mobile_AppFilter.Views.WebViewPage;
@@ -140,7 +146,7 @@ namespace mobile_AppFilter.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_Source(obj.Source, DATA_CHANGED);
+                                bindings.Update_Source(obj.Source, DATA_CHANGED);
                             }
                         }
                         else
@@ -164,7 +170,7 @@ namespace mobile_AppFilter.Views
                 public void UpdateChildListeners_(global::mobile_AppFilter.Views.WebViewPage obj)
                 {
                     WebViewPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         if (bindings.dataRoot != null)
                         {

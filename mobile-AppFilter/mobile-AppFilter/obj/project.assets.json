@@ -1,7 +1,7 @@
 {
   "version": 2,
   "targets": {
-    "UAP,Version=v10.0.10586": {
+    "UAP,Version=v10.0.14393": {
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2446,7 +2446,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-arm": {
+    "UAP,Version=v10.0.14393/win10-arm": {
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4921,7 +4921,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-arm-aot": {
+    "UAP,Version=v10.0.14393/win10-arm-aot": {
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -7435,7 +7435,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x64": {
+    "UAP,Version=v10.0.14393/win10-x64": {
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -9919,7 +9919,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x64-aot": {
+    "UAP,Version=v10.0.14393/win10-x64-aot": {
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -12442,7 +12442,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x86": {
+    "UAP,Version=v10.0.14393/win10-x86": {
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -14926,7 +14926,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.10586/win10-x86-aot": {
+    "UAP,Version=v10.0.14393/win10-x86-aot": {
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -24131,7 +24131,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "UAP,Version=v10.0.10586": [
+    "UAP,Version=v10.0.14393": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.3",
       "Microsoft.Toolkit.Uwp.Notifications >= 1.4.1",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 2.0.0",
@@ -24151,10 +24151,10 @@
       "outputPath": "E:\\Repos\\myGit\\GitHub\\blinds52\\mobile-AppFilter\\mobile-AppFilter\\mobile-AppFilter\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
-        "uap10.0.10586"
+        "uap10.0.14393"
       ],
       "frameworks": {
-        "uap10.0.10586": {
+        "uap10.0.14393": {
           "projectReferences": {}
         }
       }
@@ -24182,7 +24182,7 @@
       }
     },
     "frameworks": {
-      "uap10.0.10586": {
+      "uap10.0.14393": {
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",

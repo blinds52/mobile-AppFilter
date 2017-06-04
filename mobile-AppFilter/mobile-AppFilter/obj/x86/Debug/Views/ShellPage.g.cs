@@ -15,7 +15,8 @@ namespace mobile_AppFilter.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_Windows_UI_Xaml_Controls_SplitView_DisplayMode(global::Windows.UI.Xaml.Controls.SplitView obj, global::Windows.UI.Xaml.Controls.SplitViewDisplayMode value)
             {
@@ -79,6 +80,7 @@ namespace mobile_AppFilter.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class ShellPage_obj2_Bindings :
             global::Windows.UI.Xaml.IDataTemplateExtension,
             global::Windows.UI.Xaml.Markup.IComponentConnector,
@@ -128,13 +130,10 @@ namespace mobile_AppFilter.Views
 
             public void DataContextChangedHandler(global::Windows.UI.Xaml.FrameworkElement sender, global::Windows.UI.Xaml.DataContextChangedEventArgs args)
             {
-                 global::mobile_AppFilter.Views.ShellNavigationItem data = args.NewValue as global::mobile_AppFilter.Views.ShellNavigationItem;
-                 if (args.NewValue != null && data == null)
+                 if (this.SetDataRoot(args.NewValue))
                  {
-                    throw new global::System.ArgumentException("Incorrect type passed into template. Based on the x:DataType global::mobile_AppFilter.Views.ShellNavigationItem was expected.");
+                    this.Update();
                  }
-                 this.SetDataRoot(data);
-                 this.Update();
             }
 
             // IDataTemplateExtension
@@ -151,7 +150,7 @@ namespace mobile_AppFilter.Views
                 {
                     case 0:
                         nextPhase = -1;
-                        this.SetDataRoot(args.Item as global::mobile_AppFilter.Views.ShellNavigationItem);
+                        this.SetDataRoot(args.Item);
                         if (!removedDataContextHandler)
                         {
                             removedDataContextHandler = true;
@@ -191,12 +190,15 @@ namespace mobile_AppFilter.Views
                 this.initialized = false;
             }
 
-            // ShellPage_obj2_Bindings
-
-            public void SetDataRoot(global::mobile_AppFilter.Views.ShellNavigationItem newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::mobile_AppFilter.Views.ShellNavigationItem)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             // Update methods for each path node used in binding steps.
@@ -222,22 +224,25 @@ namespace mobile_AppFilter.Views
             }
             private void Update_Label(global::System.String obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
-                    XamlBindingSetters.Set_Windows_UI_Xaml_Automation_AutomationProperties_Name(this.obj2.Target as global::Windows.UI.Xaml.Controls.Button, obj, null);
+                    if ((this.obj2.Target as global::Windows.UI.Xaml.Controls.Button) != null)
+                    {
+                        XamlBindingSetters.Set_Windows_UI_Xaml_Automation_AutomationProperties_Name((this.obj2.Target as global::Windows.UI.Xaml.Controls.Button), obj, null);
+                    }
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj5, obj, null);
                 }
             }
             private void Update_SelectedVis(global::Windows.UI.Xaml.Visibility obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_UIElement_Visibility(this.obj3, obj);
                 }
             }
             private void Update_SelectedForeground(global::Windows.UI.Xaml.Media.SolidColorBrush obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_IconElement_Foreground(this.obj4, obj, null);
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Foreground(this.obj5, obj, null);
@@ -245,15 +250,16 @@ namespace mobile_AppFilter.Views
             }
             private void Update_SymbolAsChar(global::System.Char obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_FontIcon_Glyph(this.obj4, obj.ToString(), null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class ShellPage_obj2_BindingsTracking
             {
-                global::System.WeakReference<ShellPage_obj2_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<ShellPage_obj2_Bindings> WeakRefToBindingObj; 
 
                 public ShellPage_obj2_BindingsTracking(ShellPage_obj2_Bindings obj)
                 {
@@ -268,7 +274,7 @@ namespace mobile_AppFilter.Views
                 public void PropertyChanged_(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     ShellPage_obj2_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::mobile_AppFilter.Views.ShellNavigationItem obj = sender as global::mobile_AppFilter.Views.ShellNavigationItem;
@@ -276,8 +282,8 @@ namespace mobile_AppFilter.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_SelectedVis(obj.SelectedVis, DATA_CHANGED);
-                                    bindings.Update_SelectedForeground(obj.SelectedForeground, DATA_CHANGED);
+                                bindings.Update_SelectedVis(obj.SelectedVis, DATA_CHANGED);
+                                bindings.Update_SelectedForeground(obj.SelectedForeground, DATA_CHANGED);
                             }
                         }
                         else
@@ -309,7 +315,7 @@ namespace mobile_AppFilter.Views
                 public void UpdateChildListeners_(global::mobile_AppFilter.Views.ShellNavigationItem obj)
                 {
                     ShellPage_obj2_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         if (bindings.dataRoot != null)
                         {
@@ -325,6 +331,7 @@ namespace mobile_AppFilter.Views
             }
         }
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class ShellPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IShellPage_Bindings
@@ -360,7 +367,7 @@ namespace mobile_AppFilter.Views
                                 if (this.initialized)
                                 {
                                     // Update Two Way binding
-                                    this.dataRoot.IsPaneOpen = (this.obj7).IsPaneOpen;
+                                    this.dataRoot.IsPaneOpen = this.obj7.IsPaneOpen;
                                 }
                             });
                         break;
@@ -397,12 +404,15 @@ namespace mobile_AppFilter.Views
                 this.initialized = false;
             }
 
-            // ShellPage_obj1_Bindings
-
-            public void SetDataRoot(global::mobile_AppFilter.Views.ShellPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::mobile_AppFilter.Views.ShellPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -427,36 +437,39 @@ namespace mobile_AppFilter.Views
             }
             private void Update_DisplayMode(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_SplitView_DisplayMode(this.obj7, obj);
                 }
             }
             private void Update_IsPaneOpen(global::System.Boolean obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_SplitView_IsPaneOpen(this.obj7, obj);
                 }
             }
             private void Update_PrimaryItems(global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                this.bindingsTracking.UpdateChildListeners_PrimaryItems(obj);
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ItemsControl_ItemsSource(this.obj9, obj, null);
                 }
             }
             private void Update_SecondaryItems(global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                this.bindingsTracking.UpdateChildListeners_SecondaryItems(obj);
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ItemsControl_ItemsSource(this.obj10, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class ShellPage_obj1_BindingsTracking
             {
-                global::System.WeakReference<ShellPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<ShellPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public ShellPage_obj1_BindingsTracking(ShellPage_obj1_Bindings obj)
                 {
@@ -466,12 +479,14 @@ namespace mobile_AppFilter.Views
                 public void ReleaseAllListeners()
                 {
                     UpdateChildListeners_(null);
+                    UpdateChildListeners_PrimaryItems(null);
+                    UpdateChildListeners_SecondaryItems(null);
                 }
 
                 public void PropertyChanged_(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     ShellPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::mobile_AppFilter.Views.ShellPage obj = sender as global::mobile_AppFilter.Views.ShellPage;
@@ -479,10 +494,10 @@ namespace mobile_AppFilter.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_DisplayMode(obj.DisplayMode, DATA_CHANGED);
-                                    bindings.Update_IsPaneOpen(obj.IsPaneOpen, DATA_CHANGED);
-                                    bindings.Update_PrimaryItems(obj.PrimaryItems, DATA_CHANGED);
-                                    bindings.Update_SecondaryItems(obj.SecondaryItems, DATA_CHANGED);
+                                bindings.Update_DisplayMode(obj.DisplayMode, DATA_CHANGED);
+                                bindings.Update_IsPaneOpen(obj.IsPaneOpen, DATA_CHANGED);
+                                bindings.Update_PrimaryItems(obj.PrimaryItems, DATA_CHANGED);
+                                bindings.Update_SecondaryItems(obj.SecondaryItems, DATA_CHANGED);
                             }
                         }
                         else
@@ -530,7 +545,7 @@ namespace mobile_AppFilter.Views
                 public void UpdateChildListeners_(global::mobile_AppFilter.Views.ShellPage obj)
                 {
                     ShellPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         if (bindings.dataRoot != null)
                         {
@@ -546,7 +561,7 @@ namespace mobile_AppFilter.Views
                 public void PropertyChanged_PrimaryItems(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     ShellPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem>;
@@ -566,15 +581,34 @@ namespace mobile_AppFilter.Views
                 public void CollectionChanged_PrimaryItems(object sender, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
                 {
                     ShellPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem>;
+                    }
+                }
+                private global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> cache_PrimaryItems = null;
+                public void UpdateChildListeners_PrimaryItems(global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> obj)
+                {
+                    if (obj != cache_PrimaryItems)
+                    {
+                        if (cache_PrimaryItems != null)
+                        {
+                            ((global::System.ComponentModel.INotifyPropertyChanged)cache_PrimaryItems).PropertyChanged -= PropertyChanged_PrimaryItems;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)cache_PrimaryItems).CollectionChanged -= CollectionChanged_PrimaryItems;
+                            cache_PrimaryItems = null;
+                        }
+                        if (obj != null)
+                        {
+                            cache_PrimaryItems = obj;
+                            ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_PrimaryItems;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)obj).CollectionChanged += CollectionChanged_PrimaryItems;
+                        }
                     }
                 }
                 public void PropertyChanged_SecondaryItems(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     ShellPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem>;
@@ -594,9 +628,28 @@ namespace mobile_AppFilter.Views
                 public void CollectionChanged_SecondaryItems(object sender, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
                 {
                     ShellPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem>;
+                    }
+                }
+                private global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> cache_SecondaryItems = null;
+                public void UpdateChildListeners_SecondaryItems(global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Views.ShellNavigationItem> obj)
+                {
+                    if (obj != cache_SecondaryItems)
+                    {
+                        if (cache_SecondaryItems != null)
+                        {
+                            ((global::System.ComponentModel.INotifyPropertyChanged)cache_SecondaryItems).PropertyChanged -= PropertyChanged_SecondaryItems;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)cache_SecondaryItems).CollectionChanged -= CollectionChanged_SecondaryItems;
+                            cache_SecondaryItems = null;
+                        }
+                        if (obj != null)
+                        {
+                            cache_SecondaryItems = obj;
+                            ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_SecondaryItems;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)obj).CollectionChanged += CollectionChanged_SecondaryItems;
+                        }
                     }
                 }
             }
@@ -692,7 +745,7 @@ namespace mobile_AppFilter.Views
                     global::Windows.UI.Xaml.Controls.Button element2 = (global::Windows.UI.Xaml.Controls.Button)target;
                     ShellPage_obj2_Bindings bindings = new ShellPage_obj2_Bindings();
                     returnValue = bindings;
-                    bindings.SetDataRoot((global::mobile_AppFilter.Views.ShellNavigationItem) element2.DataContext);
+                    bindings.SetDataRoot(element2.DataContext);
                     element2.DataContextChanged += bindings.DataContextChangedHandler;
                     global::Windows.UI.Xaml.DataTemplate.SetExtensionInstance(element2, bindings);
                 }

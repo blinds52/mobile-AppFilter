@@ -2,5 +2,14 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
+    <Source>E:\!Personal\blind\Pictures\20347_128.png</Source>
+    <SmallTileSource>E:\!Personal\blind\Pictures\20347_128.png</SmallTileSource>
+    <MediumTileSource>E:\!Personal\blind\Pictures\20347_128.png</MediumTileSource>
+    <WideTileSource>E:\!Personal\blind\Pictures\20347_128.png</WideTileSource>
+    <LargeTileSource>E:\!Personal\blind\Pictures\20347_128.png</LargeTileSource>
+    <AppIconSource>E:\!Personal\blind\Pictures\20347_128.png</AppIconSource>
+    <SplashScreenSource>E:\!Personal\blind\Pictures\20347_128.png</SplashScreenSource>
+    <PackageLogoSource>E:\!Personal\blind\Pictures\OrangeCrossSmall.jpg</PackageLogoSource>
+    <BadgeLogoSource>E:\!Personal\blind\Pictures\20347_128.png</BadgeLogoSource>
   </PropertyGroup>
 </Project>

@@ -15,7 +15,8 @@ namespace mobile_AppFilter.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_Windows_UI_Xaml_Controls_Maps_MapControl_ZoomLevel(global::Windows.UI.Xaml.Controls.Maps.MapControl obj, global::System.Double value)
             {
@@ -31,6 +32,7 @@ namespace mobile_AppFilter.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class MapPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IMapPage_Bindings
@@ -86,12 +88,15 @@ namespace mobile_AppFilter.Views
                 this.initialized = false;
             }
 
-            // MapPage_obj1_Bindings
-
-            public void SetDataRoot(global::mobile_AppFilter.Views.MapPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::mobile_AppFilter.Views.MapPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -114,22 +119,23 @@ namespace mobile_AppFilter.Views
             }
             private void Update_ZoomLevel(global::System.Double obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Maps_MapControl_ZoomLevel(this.obj2, obj);
                 }
             }
             private void Update_Center(global::Windows.Devices.Geolocation.Geopoint obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Maps_MapControl_Center(this.obj2, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class MapPage_obj1_BindingsTracking
             {
-                global::System.WeakReference<MapPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<MapPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public MapPage_obj1_BindingsTracking(MapPage_obj1_Bindings obj)
                 {
@@ -144,7 +150,7 @@ namespace mobile_AppFilter.Views
                 public void PropertyChanged_(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     MapPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::mobile_AppFilter.Views.MapPage obj = sender as global::mobile_AppFilter.Views.MapPage;
@@ -152,8 +158,8 @@ namespace mobile_AppFilter.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_ZoomLevel(obj.ZoomLevel, DATA_CHANGED);
-                                    bindings.Update_Center(obj.Center, DATA_CHANGED);
+                                bindings.Update_ZoomLevel(obj.ZoomLevel, DATA_CHANGED);
+                                bindings.Update_Center(obj.Center, DATA_CHANGED);
                             }
                         }
                         else
@@ -185,7 +191,7 @@ namespace mobile_AppFilter.Views
                 public void UpdateChildListeners_(global::mobile_AppFilter.Views.MapPage obj)
                 {
                     MapPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         if (bindings.dataRoot != null)
                         {

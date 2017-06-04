@@ -15,7 +15,8 @@ namespace mobile_AppFilter.Views
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2
     {
-        internal class XamlBindingSetters
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
+        private static class XamlBindingSetters
         {
             public static void Set_mobile_AppFilter_Views_MasterDetailDetailControl_MasterMenuItem(global::mobile_AppFilter.Views.MasterDetailDetailControl obj, global::mobile_AppFilter.Models.SampleModel value, string targetNullValue)
             {
@@ -51,6 +52,7 @@ namespace mobile_AppFilter.Views
             }
         };
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class MasterDetailPage_obj2_Bindings :
             global::Windows.UI.Xaml.IDataTemplateExtension,
             global::Windows.UI.Xaml.Markup.IComponentConnector,
@@ -89,13 +91,10 @@ namespace mobile_AppFilter.Views
 
             public void DataContextChangedHandler(global::Windows.UI.Xaml.FrameworkElement sender, global::Windows.UI.Xaml.DataContextChangedEventArgs args)
             {
-                 global::mobile_AppFilter.Models.SampleModel data = args.NewValue as global::mobile_AppFilter.Models.SampleModel;
-                 if (args.NewValue != null && data == null)
+                 if (this.SetDataRoot(args.NewValue))
                  {
-                    throw new global::System.ArgumentException("Incorrect type passed into template. Based on the x:DataType global::mobile_AppFilter.Models.SampleModel was expected.");
+                    this.Update();
                  }
-                 this.SetDataRoot(data);
-                 this.Update();
             }
 
             // IDataTemplateExtension
@@ -112,7 +111,7 @@ namespace mobile_AppFilter.Views
                 {
                     case 0:
                         nextPhase = -1;
-                        this.SetDataRoot(args.Item as global::mobile_AppFilter.Models.SampleModel);
+                        this.SetDataRoot(args.Item);
                         if (!removedDataContextHandler)
                         {
                             removedDataContextHandler = true;
@@ -149,11 +148,14 @@ namespace mobile_AppFilter.Views
             {
             }
 
-            // MasterDetailPage_obj2_Bindings
-
-            public void SetDataRoot(global::mobile_AppFilter.Models.SampleModel newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::mobile_AppFilter.Models.SampleModel)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             // Update methods for each path node used in binding steps.
@@ -170,20 +172,21 @@ namespace mobile_AppFilter.Views
             }
             private void Update_Title(global::System.String obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj3, obj, null);
                 }
             }
             private void Update_Description(global::System.String obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED )) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_TextBlock_Text(this.obj4, obj, null);
                 }
             }
         }
 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private class MasterDetailPage_obj1_Bindings :
             global::Windows.UI.Xaml.Markup.IComponentConnector,
             IMasterDetailPage_Bindings
@@ -243,12 +246,15 @@ namespace mobile_AppFilter.Views
                 this.initialized = false;
             }
 
-            // MasterDetailPage_obj1_Bindings
-
-            public void SetDataRoot(global::mobile_AppFilter.Views.MasterDetailPage newDataRoot)
+            public bool SetDataRoot(global::System.Object newDataRoot)
             {
                 this.bindingsTracking.ReleaseAllListeners();
-                this.dataRoot = newDataRoot;
+                if (newDataRoot != null)
+                {
+                    this.dataRoot = (global::mobile_AppFilter.Views.MasterDetailPage)newDataRoot;
+                    return true;
+                }
+                return false;
             }
 
             public void Loading(global::Windows.UI.Xaml.FrameworkElement src, object data)
@@ -271,7 +277,7 @@ namespace mobile_AppFilter.Views
             }
             private void Update_Selected(global::mobile_AppFilter.Models.SampleModel obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_mobile_AppFilter_Views_MasterDetailDetailControl_MasterMenuItem(this.obj12, obj, null);
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_Primitives_Selector_SelectedItem(this.obj15, obj, null);
@@ -279,15 +285,17 @@ namespace mobile_AppFilter.Views
             }
             private void Update_SampleItems(global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Models.SampleModel> obj, int phase)
             {
-                if((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
+                this.bindingsTracking.UpdateChildListeners_SampleItems(obj);
+                if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     XamlBindingSetters.Set_Windows_UI_Xaml_Controls_ItemsControl_ItemsSource(this.obj15, obj, null);
                 }
             }
 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
             private class MasterDetailPage_obj1_BindingsTracking
             {
-                global::System.WeakReference<MasterDetailPage_obj1_Bindings> WeakRefToBindingObj; 
+                private global::System.WeakReference<MasterDetailPage_obj1_Bindings> WeakRefToBindingObj; 
 
                 public MasterDetailPage_obj1_BindingsTracking(MasterDetailPage_obj1_Bindings obj)
                 {
@@ -297,12 +305,13 @@ namespace mobile_AppFilter.Views
                 public void ReleaseAllListeners()
                 {
                     UpdateChildListeners_(null);
+                    UpdateChildListeners_SampleItems(null);
                 }
 
                 public void PropertyChanged_(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     MasterDetailPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::mobile_AppFilter.Views.MasterDetailPage obj = sender as global::mobile_AppFilter.Views.MasterDetailPage;
@@ -310,8 +319,8 @@ namespace mobile_AppFilter.Views
                         {
                             if (obj != null)
                             {
-                                    bindings.Update_Selected(obj.Selected, DATA_CHANGED);
-                                    bindings.Update_SampleItems(obj.SampleItems, DATA_CHANGED);
+                                bindings.Update_Selected(obj.Selected, DATA_CHANGED);
+                                bindings.Update_SampleItems(obj.SampleItems, DATA_CHANGED);
                             }
                         }
                         else
@@ -343,7 +352,7 @@ namespace mobile_AppFilter.Views
                 public void UpdateChildListeners_(global::mobile_AppFilter.Views.MasterDetailPage obj)
                 {
                     MasterDetailPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         if (bindings.dataRoot != null)
                         {
@@ -359,7 +368,7 @@ namespace mobile_AppFilter.Views
                 public void PropertyChanged_SampleItems(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
                 {
                     MasterDetailPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         string propName = e.PropertyName;
                         global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Models.SampleModel> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Models.SampleModel>;
@@ -379,9 +388,28 @@ namespace mobile_AppFilter.Views
                 public void CollectionChanged_SampleItems(object sender, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
                 {
                     MasterDetailPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
+                    if (WeakRefToBindingObj.TryGetTarget(out bindings))
                     {
                         global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Models.SampleModel> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Models.SampleModel>;
+                    }
+                }
+                private global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Models.SampleModel> cache_SampleItems = null;
+                public void UpdateChildListeners_SampleItems(global::System.Collections.ObjectModel.ObservableCollection<global::mobile_AppFilter.Models.SampleModel> obj)
+                {
+                    if (obj != cache_SampleItems)
+                    {
+                        if (cache_SampleItems != null)
+                        {
+                            ((global::System.ComponentModel.INotifyPropertyChanged)cache_SampleItems).PropertyChanged -= PropertyChanged_SampleItems;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)cache_SampleItems).CollectionChanged -= CollectionChanged_SampleItems;
+                            cache_SampleItems = null;
+                        }
+                        if (obj != null)
+                        {
+                            cache_SampleItems = obj;
+                            ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_SampleItems;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)obj).CollectionChanged += CollectionChanged_SampleItems;
+                        }
                     }
                 }
             }
@@ -496,7 +524,7 @@ namespace mobile_AppFilter.Views
                     global::Windows.UI.Xaml.Controls.Grid element2 = (global::Windows.UI.Xaml.Controls.Grid)target;
                     MasterDetailPage_obj2_Bindings bindings = new MasterDetailPage_obj2_Bindings();
                     returnValue = bindings;
-                    bindings.SetDataRoot((global::mobile_AppFilter.Models.SampleModel) element2.DataContext);
+                    bindings.SetDataRoot(element2.DataContext);
                     element2.DataContextChanged += bindings.DataContextChangedHandler;
                     global::Windows.UI.Xaml.DataTemplate.SetExtensionInstance(element2, bindings);
                 }
